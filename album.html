@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./links/jquery.dataTables.min.css" />
+    <link rel="shortcut icon" href="./img/jedi.svg" type="image/x-icon" />
+    <script src="./links/jquery-1.10.2.js"></script>
+    <script src="./links/jquery.dataTables.min.js"></script>
+    <script src="./nav.js"></script>
+    <script>
+      $(function () {
+        $("#nav-placeholder").append(bar);
+      });
+    </script>
+    <script src="./script.js"></script>
+    <script src="./service/album.js"></script>
+    <title>Álbuns</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <main class="tabela-container">
+      <h1>Listagem de Álbuns</h1>
+      <br />
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th>User Id</th>
+            <th>Id</th>
+            <th>Title</th>
+          </tr>
+        </thead>
+      </table>
+    </main>
+  </body>
+</html>
